@@ -5,7 +5,6 @@ import argparse
 import time
 import numpy as np
 import six
-import net
 import chainer
 from chainer import computational_graph
 from chainer import cuda
