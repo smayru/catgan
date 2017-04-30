@@ -173,7 +173,7 @@ for epoch in six.moves.range(1, n_epoch + 1):
 
 
         #train generator
-        L_gen=d_entropy1(fake_y)+d_entropy2(fake_y)#Equation (7) lower
+        L_gen=-d_entropy1(fake_y)+d_entropy2(fake_y)#Equation (7) lower
        
         o_gen.zero_grads()  
         L_gen.backward()
